@@ -7,3 +7,5 @@ int main()
     cout << b << endl;
     return 0;
 }
+
+// Left shift means multiply by 2
