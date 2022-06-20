@@ -7,3 +7,5 @@ int main()
     cout << b << endl;
     return 0;
 }
+
+// Right shift means divide by 2
