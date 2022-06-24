@@ -35,7 +35,9 @@ int find(int* arr, int n, int target) {
         else if(arr[mid] > target)
             end = mid - 1;
     }
-    return count(arr, first, last);
+    // return count(arr, first, last);
+    // An alternative to the above method
+    return (last - first) + 1; 
 }
 int main() {
     int arr[7] = {1, 2, 3, 3, 3, 3, 5};
