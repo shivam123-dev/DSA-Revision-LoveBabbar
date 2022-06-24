@@ -3,7 +3,9 @@ using namespace std;
 int search(int* arr, int n, int key) {
     int s = 0, e = n-1;
     while(s<=e) {
-        int mid = (s+e)/2;
+        // int mid = (s+e)/2; ->this can create an error if we have both start and end values as INT_MAX
+        // so to avoid it we use the following formula:-
+        int mid = s + (e-s)/2;
         if(arr[mid] == key) {
             cout << "Element is present. The index is:-";
             return mid;
