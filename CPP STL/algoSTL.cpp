@@ -24,10 +24,10 @@ int main() {
     cout << "Finding the element 3:- " << binary_search(v.begin(), v.end(), 3);
     cout << endl;
     // lower bound 
-    cout << lower_bound(v.begin(), v.end(), 3);
+    cout << lower_bound(v.begin(), v.end(), 3)-v.begin();
     cout << endl;
     // upper bound
-    cout << "Upper Bound of 4:- " << upper_bound(v.begin(), v.end(), 4);
+    cout << "Upper Bound of 4:- " << upper_bound(v.begin(), v.end(), 4)-v.begin();
     cout << endl;
     return 0; 
 }
