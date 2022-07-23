@@ -13,6 +13,6 @@ void printCountingDec(int n) {
 int main() {
     int n;
     cin >> n;
-    printCounting(n);
+    printCountingDec(n);
     return 0;
 }
