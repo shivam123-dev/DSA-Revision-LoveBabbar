@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// Approach 1
 string ans = "";
 string rev(string s, int i=0) {
     // base case
@@ -12,9 +13,19 @@ string rev(string s, int i=0) {
     rev(s, i+1);
     return ans += a;
 }
+// Approach 2
+string reverse(string s, int i, int j) {
+    // base case
+    if(i>j)
+        return s;
+    // recursive case
+    swap(s[i], s[j]);
+    return reverse(s, i+1, j-1);
+}
 int main() {
     string s;
     cin >> s;
-    cout << rev(s);
+    cout << rev(s) << endl;
+    cout << reverse(s, 0, s.length()-1) << endl;
     return 0; 
 }
