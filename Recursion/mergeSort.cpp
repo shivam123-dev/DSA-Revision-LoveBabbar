@@ -25,6 +25,8 @@ void merge(int *arr, int start, int end) {
         arr[k++] = first[idx1++];
     while(idx2 < len2)
         arr[k++] = second[idx2++];
+    delete [] first;
+    delete [] second;
 }
 void mergeSort (int *arr, int start, int end) {
     // base case
